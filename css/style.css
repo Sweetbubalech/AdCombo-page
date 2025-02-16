@@ -349,12 +349,26 @@ fieldset {
 }
 
 .form_ul-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0.7rem;
+  line-height: 1.2rem;
 }
 
 .radio-input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
   accent-color: #9564aa;
 }
+
+.radio-input-block{
+  margin-right: 0.5rem;
+  height: 100%;
+}
+
+
 
 .form-link {
   color: #9564aa;
