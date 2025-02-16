@@ -2,11 +2,16 @@ let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
 const paginationDotsContainer = document.querySelector('.pagination-dots');
+const formButton = document.getElementById('form-button'); // Кнопка "Try now"
 
 for (let i = 0; i < totalSlides; i++) {
   const dot = document.createElement('div');
   dot.classList.add('pagination-dot');
-  dot.addEventListener('click', () => showSlide(i));
+  dot.addEventListener('click', () => {
+    showSlide(i);
+    stopSlider();
+    activateButton();
+  });
   paginationDotsContainer.appendChild(dot);
 }
 
@@ -29,6 +34,21 @@ function showSlide(index) {
   });
 }
 
+let sliderInterval;
+function startSlider() {
+  sliderInterval = setInterval(nextSlide, 5000);
+}
+
+function stopSlider() {
+  clearInterval(sliderInterval);
+}
+
+function activateButton() {
+  formButton.disabled = false;
+  formButton.style.backgroundColor = '#ffcf2d'; // Желтый цвет
+  formButton.style.color = 'black'; // Черный текст
+}
+
 function nextSlide() {
   showSlide(currentSlide + 1);
 }
@@ -37,6 +57,6 @@ function prevSlide() {
   showSlide(currentSlide - 1);
 }
 
-setInterval(nextSlide, 5000);
-
+startSlider();
 showSlide(0);
+

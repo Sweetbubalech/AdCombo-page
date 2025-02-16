@@ -116,11 +116,7 @@
                 <div class="yellow-block">One time offer!</div>
                 <div class="price-block">
                   50
-                  <img
-                    class="coin-icon"
-                    src="/img/CR-icon.svg"
-                    alt="CR-icon"
-                  />$5
+                  <div class="CR-icon slider-coin"> CR</div>$5
                 </div>
               </div>
             </div>
@@ -129,11 +125,7 @@
                 <div class="yellow-block">One time offer!</div>
                 <div class="price-block">
                   100
-                  <img
-                    class="coin-icon"
-                    src="/img/CR-icon.svg"
-                    alt="CR-icon"
-                  />$10
+                  <div class="CR-icon slider-coin"> CR</div>$10
                 </div>
               </div>
             </div>
@@ -142,11 +134,7 @@
                 <div class="yellow-block">One time offer!</div>
                 <div class="price-block">
                   150
-                  <img
-                    class="coin-icon"
-                    src="/img/CR-icon.svg"
-                    alt="CR-icon"
-                  />$15
+                  <div class="CR-icon slider-coin"> CR</div>$15
                 </div>
               </div>
             </div>
@@ -155,11 +143,7 @@
                 <div class="yellow-block">One time offer!</div>
                 <div class="price-block">
                   300
-                  <img
-                    class="coin-icon"
-                    src="/img/CR-icon.svg"
-                    alt="CR-icon"
-                  />$30
+                  <div class="CR-icon slider-coin"> CR</div>$30
                 </div>
               </div>
             </div>
@@ -168,11 +152,7 @@
                 <div class="yellow-block">One time offer!</div>
                 <div class="price-block">
                   500
-                  <img
-                    class="coin-icon"
-                    src="/img/CR-icon.svg"
-                    alt="CR-icon"
-                  />$50
+                  <div class="CR-icon slider-coin"> CR</div>$50
                 </div>
               </div>
             </div>
@@ -181,11 +161,7 @@
                 <div class="yellow-block">One time offer!</div>
                 <div class="price-block">
                   1000
-                  <img
-                    class="coin-icon"
-                    src="/img/CR-icon.svg"
-                    alt="CR-icon"
-                  />$100
+                  <div class="CR-icon slider-coin"> CR</div>$100
                 </div>
               </div>
             </div>
@@ -197,23 +173,22 @@
           <fieldset>
             <ul class="form_ul">
               <li class="form_ul_item">
-                <button id="form-button" class="form-button" type="submit">
+                <button id="form-button" class="form-button" type="submit" disabled>
                   Try now
                 </button>
               </li>
-
+        
               <li class="form_ul-item">
                 <input
                   class="radio-input"
                   type="checkbox"
                   name="Privacy policy"
                   id="Privacy policy"
+                  required
                 />
                 <label for="form-button">
                   By clicking Checkbox you agree and accept our
-                  <a class="form-link" href="" target="_blank">
-                    Privacy Policy</a
-                  >
+                  <a class="form-link" href="" target="_blank"> Privacy Policy</a>
                   , and
                   <a class="form-link" href="" target="_blank"> Terms of use</a>
                 </label>
@@ -293,7 +268,7 @@
 
         <div class="form-container">
           <div class="offer-blocks">
-            <label class="offer-block">
+            <label class="offer-block grid50">
               <input
                 class="offer-radio-input"
                 type="radio"
@@ -306,15 +281,14 @@
                   One time offer!
                 </div>
                 <span class="offer-content-span">
-                  50 <img class="CR-icon" src="img/CR-icon.svg" alt=""
-                /></span>
+                  50 <div class="CR-icon"> CR</div></span>
                 <button class="buy-now-button" id="buy-now-button" disabled>
                   Buy now
                 </button>
               </div>
             </label>
 
-            <label class="offer-block">
+            <label class="offer-block grid100">
               <input
                 class="offer-radio-input"
                 type="radio"
@@ -323,19 +297,16 @@
                 required
               />
               <div class="offer-content">
-                <div class="one-time-offer" id="one-time-offer">
+                <div class="one-time-offer" classname="one-time-offer">
                   One time offer!
                 </div>
                 <span class="offer-content-span">
-                  100 <img class="CR-icon" src="img/CR-icon.svg" alt=""
-                /></span>
-                <button class="buy-now-button" id="buy-now-button" disabled>
-                  Buy now
-                </button>
+                  100 <div class="CR-icon"> CR</div></span>
+                <button class="buy-now-button" disabled>Buy now</button>
               </div>
             </label>
 
-            <label class="offer-block">
+            <label class="offer-block grid300">
               <input
                 class="offer-radio-input"
                 type="radio"
@@ -344,19 +315,16 @@
                 required
               />
               <div class="offer-content">
-                <div class="one-time-offer" id="one-time-offer">
+                <div class="one-time-offer" classname="one-time-offer">
                   One time offer!
                 </div>
                 <span class="offer-content-span">
-                   300<img class="CR-icon" src="img/CR-icon.svg" alt=""
-                /></span>
-                <button class="buy-now-button" id="buy-now-button" disabled>
-                  Buy now
-                </button>
+                  300<div class="CR-icon"> CR</div></span>
+                <button class="buy-now-button" disabled>Buy now</button>
               </div>
             </label>
 
-            <label class="offer-block">
+            <label class="offer-block grid500">
               <input
                 class="offer-radio-input"
                 type="radio"
@@ -365,15 +333,13 @@
                 required
               />
               <div class="offer-content">
-                <div class="one-time-offer" id="one-time-offer">
+                <div class="one-time-offer" classname="one-time-offer">
                   One time offer!
                 </div>
                 <span class="offer-content-span">
-                  500 <img class="CR-icon" src="img/CR-icon.svg" alt=""
-                /></span>
-                <button class="buy-now-button" id="buy-now-button" disabled>
-                  Buy now
-                </button>
+                  500 <div class="CR-icon"> CR</div>
+                </span>
+                <button class="buy-now-button" disabled>Buy now</button>
               </div>
             </label>
 
@@ -386,21 +352,22 @@
                 required
               />
               <div class="offer-content special-offer-content">
-                <div class="one-time-offer special-one-time-offer" id="one-time-offer">
+                <div
+                  class="one-time-offer special-one-time-offer"
+                  classname="one-time-offer"
+                >
                   One time offer!
                 </div>
-                <span class="offer-content-span special-offer-content-span ">
-                  1000 <img class="CR-icon" src="img/CR-icon.svg" alt=""
-                /></span>
-                <button class="buy-now-button special-buy-now-button " id="buy-now-button" disabled>
+                <span class="offer-content-span special-offer-content-span">
+                  1000 <div class="CR-icon"> CR</div>
+              </span>
+                <button class="buy-now-button special-buy-now-button" disabled>
                   Buy now
                 </button>
               </div>
             </label>
-            
           </div>
 
-          <!-- Чекбокс для принятия условий -->
           <div class="privacy-checkbox">
             <input
               type="checkbox"
@@ -410,18 +377,122 @@
             />
             <label for="privacy-checkbox">
               By clicking Checkbox you agree and accept our
-              <a class="form-link" href="" target="_blank">
-                Privacy Policy</a
-              >
+              <a class="form-link" href="" target="_blank"> Privacy Policy</a>
               , and
               <a class="form-link" href="" target="_blank"> Terms of use</a>
             </label>
           </div>
         </div>
+
+        <div class="diamond-container">
+          <div class="block block-1">
+            <div class="diamond-container_initial-container">
+              <div class="diamond-container_icon-block">
+                <svg                   class="diamond-container_icon-block_icon"
+                width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00002 2.66663C9.81838 2.66663 11.5571 3.62038 13.1775 5.18739C13.7304 5.72199 14.2305 6.29273 14.6707 6.86371C14.9364 7.20825 15.125 7.47929 15.2283 7.64076L15.458 7.99996L15.2283 8.35916C15.125 8.52063 14.9364 8.79167 14.6707 9.13621C14.2305 9.70719 13.7304 10.2779 13.1775 10.8125C11.5571 12.3795 9.81838 13.3333 8.00002 13.3333C6.18165 13.3333 4.4429 12.3795 2.82249 10.8125C2.26968 10.2779 1.76955 9.70719 1.32929 9.13621C1.06362 8.79167 0.874998 8.52063 0.771725 8.35916L0.541992 7.99996L0.771725 7.64076C0.874998 7.47929 1.06362 7.20825 1.32929 6.86371C1.76955 6.29273 2.26968 5.72199 2.82249 5.18739C4.4429 3.62038 6.18165 2.66663 8.00002 2.66663ZM13.6149 7.67788C13.2118 7.15511 12.7535 6.63209 12.2507 6.14586C10.855 4.79621 9.4034 3.99996 8.00002 3.99996C6.59663 3.99996 5.14501 4.79621 3.74938 6.14586C3.24657 6.63209 2.78827 7.15511 2.38518 7.67788C2.29812 7.79078 2.21767 7.89851 2.14413 7.99996C2.21767 8.10141 2.29812 8.20914 2.38518 8.32204C2.78827 8.84481 3.24657 9.36782 3.74938 9.85406C5.14501 11.2037 6.59663 12 8.00002 12C9.4034 12 10.855 11.2037 12.2507 9.85406C12.7535 9.36782 13.2118 8.84481 13.6149 8.32204C13.7019 8.20914 13.7824 8.10141 13.8559 7.99996C13.7824 7.89851 13.7019 7.79078 13.6149 7.67788ZM5.33335 7.99996C5.33335 9.47272 6.52726 10.6666 8.00002 10.6666C9.47277 10.6666 10.6667 9.47272 10.6667 7.99996C10.6667 6.5272 9.47277 5.33329 8.00002 5.33329C6.52726 5.33329 5.33335 6.5272 5.33335 7.99996ZM9.33335 7.99996C9.33335 8.73634 8.73639 9.33329 8.00002 9.33329C7.26364 9.33329 6.66668 8.73634 6.66668 7.99996C6.66668 7.26358 7.26364 6.66663 8.00002 6.66663C8.73639 6.66663 9.33335 7.26358 9.33335 7.99996Z" fill="var(--icon-color, #9564aa)"/>
+                  </svg>
+              </div>
+              <div class="diamond-container_discription-block">
+                Отправлять сообщения
+              </div>
+            </div>
+          </div>
+          <div class="block block-2">
+            <div class="diamond-container_initial-container">
+              <div class="diamond-container_icon-block">
+                <svg                   class="diamond-container_icon-block_icon"
+                width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7402 0.804215C14.2926 0.804199 13.3594 0.975582 12.2897 1.49591C11.8936 1.68855 11.5221 1.92055 11.177 2.19121C10.8452 1.93572 10.4885 1.71438 10.1088 1.52777C9.01833 0.991792 8.03729 0.804199 6.64156 0.804199C2.90345 0.804199 0.187012 3.88206 0.187012 7.87946C0.187012 10.8983 1.88084 13.8144 5.03585 16.6343C6.69191 18.1144 8.80633 19.5791 10.3206 20.3584L11.187 20.8042L12.0534 20.3584C13.5677 19.5791 15.6821 18.1144 17.3382 16.6343C20.4932 13.8144 22.187 10.8983 22.187 7.87946C22.187 3.92437 19.445 0.819461 15.7402 0.804215ZM20.187 7.87946C20.187 10.2446 18.7732 12.6786 16.0007 15.1565C14.4892 16.5075 12.546 17.8576 11.187 18.5659C9.82805 17.8576 7.88483 16.5075 6.37329 15.1565C3.60083 12.6786 2.18701 10.2446 2.18701 7.87946C2.18701 4.92592 4.07065 2.79167 6.64156 2.79167C7.75129 2.79167 8.43514 2.92243 9.22215 3.30925C9.68702 3.53773 10.0979 3.83943 10.4535 4.21645L11.1893 4.99646L11.9185 4.21027C12.2821 3.81814 12.699 3.50958 13.1689 3.28101C13.9329 2.90942 14.574 2.79167 15.7361 2.79167C18.2752 2.80213 20.187 4.96691 20.187 7.87946Z" fill="var(--icon-color, #9564aa)"/>
+                  </svg>
+
+
+
+              </div>
+              <div class="diamond-container_discription-block">
+                Пользоваться <br />
+                другими премиум <br />
+                функциями
+              </div>
+            </div>
+          </div>
+
+          <div class="block block-3">
+            <div class="diamond-container_initial-container">
+              <div class="diamond-container_icon-block">
+                <svg                   class="diamond-container_icon-block_icon"
+                width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66467 3.66671C2.44587 3.30896 2.33331 2.86861 2.33331 2.33337C2.33331 1.2781 3.12688 0.333374 4.33331 0.333374C5.54131 0.333374 6.51549 1.14246 6.99998 2.40926C7.48447 1.14246 8.45865 0.333374 9.66665 0.333374C10.8731 0.333374 11.6666 1.2781 11.6666 2.33337C11.6666 2.86861 11.5541 3.30896 11.3353 3.66671H12.3333C13.0697 3.66671 13.6666 4.26366 13.6666 5.00004V6.33337C13.6666 7.06975 13.0697 7.66671 12.3333 7.66671V12.3334C12.3333 13.0698 11.7364 13.6667 11 13.6667H2.99998C2.2636 13.6667 1.66665 13.0698 1.66665 12.3334V7.66671C0.930267 7.66671 0.333313 7.06975 0.333313 6.33337V5.00004C0.333313 4.26366 0.930267 3.66671 1.66665 3.66671H2.66467ZM6.33331 5.00004H1.66665V6.33337H6.33331V5.00004ZM12.3333 6.33337H7.66665V5.00004H12.3333V6.33337ZM6.33331 12.3334V7.66671H2.99998V12.3334H6.33331ZM11 12.3334H7.66665V7.66671H11V12.3334ZM4.33331 1.66671C3.91974 1.66671 3.66665 1.96802 3.66665 2.33337C3.66665 3.16886 4.34465 3.56612 5.95293 3.6497C5.77418 2.40777 5.1081 1.66671 4.33331 1.66671ZM7.99998 3.6497C8.17872 2.40777 8.84481 1.66671 9.61959 1.66671C10.0332 1.66671 10.2863 1.96802 10.2863 2.33337C10.2863 3.16886 9.60826 3.56612 7.99998 3.6497Z" fill="var(--icon-color, #9564aa)"/>
+                  </svg>
+
+
+
+              </div>
+              <div class="diamond-container_discription-block">
+                Оплачивать <br />
+                подарки
+              </div>
+            </div>
+          </div>
+          <div class="block block-4 diamond-block"></div>
+          <div class="block block-5">
+            <div class="diamond-container_initial-container">
+              <div class="diamond-container_icon-block">
+
+                <svg                   class="diamond-container_icon-block_icon"
+                width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00002 2.66663C9.81838 2.66663 11.5571 3.62038 13.1775 5.18739C13.7304 5.72199 14.2305 6.29273 14.6707 6.86371C14.9364 7.20825 15.125 7.47929 15.2283 7.64076L15.458 7.99996L15.2283 8.35916C15.125 8.52063 14.9364 8.79167 14.6707 9.13621C14.2305 9.70719 13.7304 10.2779 13.1775 10.8125C11.5571 12.3795 9.81838 13.3333 8.00002 13.3333C6.18165 13.3333 4.4429 12.3795 2.82249 10.8125C2.26968 10.2779 1.76955 9.70719 1.32929 9.13621C1.06362 8.79167 0.874998 8.52063 0.771725 8.35916L0.541992 7.99996L0.771725 7.64076C0.874998 7.47929 1.06362 7.20825 1.32929 6.86371C1.76955 6.29273 2.26968 5.72199 2.82249 5.18739C4.4429 3.62038 6.18165 2.66663 8.00002 2.66663ZM13.6149 7.67788C13.2118 7.15511 12.7535 6.63209 12.2507 6.14586C10.855 4.79621 9.4034 3.99996 8.00002 3.99996C6.59663 3.99996 5.14501 4.79621 3.74938 6.14586C3.24657 6.63209 2.78827 7.15511 2.38518 7.67788C2.29812 7.79078 2.21767 7.89851 2.14413 7.99996C2.21767 8.10141 2.29812 8.20914 2.38518 8.32204C2.78827 8.84481 3.24657 9.36782 3.74938 9.85406C5.14501 11.2037 6.59663 12 8.00002 12C9.4034 12 10.855 11.2037 12.2507 9.85406C12.7535 9.36782 13.2118 8.84481 13.6149 8.32204C13.7019 8.20914 13.7824 8.10141 13.8559 7.99996C13.7824 7.89851 13.7019 7.79078 13.6149 7.67788ZM5.33335 7.99996C5.33335 9.47272 6.52726 10.6666 8.00002 10.6666C9.47277 10.6666 10.6667 9.47272 10.6667 7.99996C10.6667 6.5272 9.47277 5.33329 8.00002 5.33329C6.52726 5.33329 5.33335 6.5272 5.33335 7.99996ZM9.33335 7.99996C9.33335 8.73634 8.73639 9.33329 8.00002 9.33329C7.26364 9.33329 6.66668 8.73634 6.66668 7.99996C6.66668 7.26358 7.26364 6.66663 8.00002 6.66663C8.73639 6.66663 9.33335 7.26358 9.33335 7.99996Z" fill="var(--icon-color, #9564aa)"/>
+                  </svg>
+                  
+
+
+
+              </div>
+              <div class="diamond-container_discription-block">
+                Просматривать <br />
+                скрытые фото
+              </div>
+            </div>
+          </div>
+          <div class="block block-6">
+            <div class="diamond-container_initial-container">
+              <div class="diamond-container_icon-block">
+
+                <svg                   class="diamond-container_icon-block_icon"
+                width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.18701 19.8042L10.2738 16H18.187C19.2916 16 20.187 15.1046 20.187 14V2C20.187 0.89543 19.2916 0 18.187 0H2.18701C1.08244 0 0.187012 0.89543 0.187012 2V14C0.187012 15.1046 1.08244 16 2.18701 16H4.18701V19.8042ZM9.70022 14L6.18701 16.1958V14H2.18701V2H18.187V14H9.70022Z" fill="var(--icon-color, #9564aa)"/>
+                  </svg>
+                  
+
+              </div>
+              <div class="diamond-container_discription-block">
+                Просматривать <br />
+                скрытые фото
+              </div>
+            </div>
+          </div>
+
+
+          <div class="block block-7">
+            <div class="diamond-container_initial-container">
+              <div class="diamond-container_icon-block">
+
+                <svg class="diamond-container_icon-block_icon"  width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.187 15.8042C8.97787 15.8042 7.18701 14.0133 7.18701 11.8042C7.18701 9.59506 8.97787 7.8042 11.187 7.8042C13.3962 7.8042 15.187 9.59506 15.187 11.8042C15.187 14.0133 13.3962 15.8042 11.187 15.8042ZM13.187 11.8042C13.187 12.9088 12.2916 13.8042 11.187 13.8042C10.0824 13.8042 9.18701 12.9088 9.18701 11.8042C9.18701 10.6996 10.0824 9.8042 11.187 9.8042C12.2916 9.8042 13.187 10.6996 13.187 11.8042Z" fill="var(--icon-color, #9564aa)"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8432 20.7012L20.0604 18.484L19.2795 15.6472L19.6197 14.8347L22.187 13.386V10.2506L19.627 8.79593L19.2925 7.98487L20.0832 5.14655L17.8644 2.93103L15.0273 3.71168L14.2166 3.37177L12.7678 0.804199H9.63245L8.17773 3.36424L7.36686 3.69866L4.52899 2.90701L2.31371 5.12229L3.09449 7.95987L2.75459 8.77054L0.187012 10.2193V13.3538L2.74475 14.8118L3.07953 15.6235L2.28898 18.4614L4.5051 20.6775L7.34269 19.8967L8.15345 20.2367L9.60228 22.8032H12.7369L14.1937 20.2454L15.0053 19.9107L17.8432 20.7012ZM18.0397 13.4298L17.1679 15.512L17.8232 17.8928L17.2548 18.4612L14.879 17.7993L12.796 18.6584L11.5743 20.8032H10.7699L9.55842 18.6571L7.47856 17.785L5.09648 18.4404L4.52904 17.873L5.19087 15.4972L4.33183 13.4143L2.18701 12.1918V11.3872L4.33411 10.1757L5.20621 8.09575L4.55076 5.71366L5.11702 5.14741L7.49277 5.81015L9.57656 4.95075L10.7963 2.8042H11.5999L12.8115 4.9513L14.8914 5.82339L17.274 5.16782L17.8428 5.73586L17.1811 8.11116L18.0405 10.1948L20.187 11.4145V12.2181L18.0397 13.4298Z"  fill="var(--icon-color, #9564aa)"/>
+                  </svg>
+
+              </div>
+              <div class="diamond-container_discription-block">
+                Просматривать <br />
+                скрытые фото
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </body>
-
   <script src="/js/slider.js"></script>
   <script src="js/timer.js"></script>
 

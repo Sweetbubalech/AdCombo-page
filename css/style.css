@@ -1,30 +1,28 @@
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   src: url(/fonts/ubuntu.woff2) format("woff2");
 }
 @font-face {
-  font-family: 'Ubuntu-light';
+  font-family: "Ubuntu-light";
   src: url(/fonts/ubuntu-light.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Ubuntu-medium';
+  font-family: "Ubuntu-medium";
   src: url(/fonts/ubuntu-medium.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'Ubuntu-bold';
+  font-family: "Ubuntu-bold";
   src: url(/fonts/ubuntu-bold.woff2) format("woff2");
 }
-
-
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   margin: 0;
 }
 
@@ -42,10 +40,9 @@ li {
   list-style-type: none;
 }
 
-
 /* HEADER */
 
-.header-section{
+.header-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,114 +50,118 @@ li {
   height: 3.125rem;
   padding-left: 5%;
   padding-right: 5%;
-  font-family: 'Ubuntu-bold';
-  background-color: #9564AA;
+  font-family: "Ubuntu-bold";
+  background-color: #9564aa;
 }
 
-.burger-menu-icon{
+.burger-menu-icon {
   width: 1.5rem;
   height: 1.5rem;
+  transition: ease-in-out 0.3s;
 }
 
-.header-section_logo-block{
+.burger-menu-icon:hover {
+  transform: scale(1.2);
+}
+
+
+.header-section_logo-block {
   display: none;
   font-size: 3rem;
   color: white;
 }
 
-.header-section_navbar{
+.header-section_navbar {
   display: none;
   color: white;
 }
 
-.header-section_unordered-list{
+.header-section_unordered-list {
   display: flex;
 }
 
-.header-section_unordered-list_item{
+.header-section_unordered-list_item {
   display: flex;
   align-items: center;
   margin-left: 2.5rem;
+  transition: ease-in-out;
+  transition-duration: 0.2s;
 }
 
-.header-button{
+.header-section_unordered-list_item:hover {
+  transform: scale(1.2);
+}
+
+.header-button {
   display: flex;
   padding: 0.4rem;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
-  font-family: 'Ubuntu-bold';
+  font-family: "Ubuntu-bold";
   font-size: 1rem;
-  color: #FFCF2D;
+  color: #ffcf2d;
   background-color: #684677;
   border: none;
   border-radius: 0.5rem;
 }
 
-.header-button-icon{
+.header-button-icon {
   margin-left: 0.5rem;
 }
 
-
 @media screen and (width > 700px) {
-  .header-section{
+  .header-section {
     height: 100px;
     padding-left: 10%;
     padding-right: 10%;
   }
 
-  .burger-menu-icon{
+  .burger-menu-icon {
     display: none;
   }
 
-  .mobile-header_icon{
+  .mobile-header_icon {
     display: none;
   }
 
-  .header-section_logo-block{
+  .header-section_logo-block {
     display: block;
   }
-  .header-section_navbar{
+  .header-section_navbar {
     display: block;
   }
- }
-   
-  
-
-
-
-
+}
 
 /* MAIN */
 
-.main-section{
+.main-section {
   display: flex;
   width: 100%;
-  height: 90vh;
+  height: auto;
 }
 
-
-.main-section_sidebar{
+.main-section_sidebar {
   display: none;
   width: 25%;
-  height: 100%;
+  height: auto;
   margin-right: 1rem;
   padding: 1rem;
   color: black;
   background-color: rgba(149, 100, 170, 0.2);
-  border-radius: 10px ;
+  border-radius: 10px;
   border: 2px solid rgba(149, 100, 170, 0.2);
 }
 
-.sidebar_user-block{
+.sidebar_user-block {
   display: flex;
   align-items: center;
   width: 100%;
   height: 8%;
-  font-family: 'Ubuntu-bold';
+  font-family: "Ubuntu-bold";
   border-bottom: 2px solid rgba(149, 100, 170, 0.2);
 }
 
-.avatar{
+.avatar {
   width: 3rem;
   height: 3rem;
   margin-right: 0.5rem;
@@ -168,7 +169,7 @@ li {
   border-radius: 10rem;
 }
 
-.user-block_dicription{
+.user-block_dicription {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,7 +179,7 @@ li {
   font-size: 1rem;
 }
 
-.sidebar-button{
+.sidebar-button {
   margin-top: 0.5rem;
   width: 100%;
   height: 1.3rem;
@@ -189,31 +190,35 @@ li {
   background-color: #684677;
 }
 
-.sidebar_unordered-list_item{
+.sidebar_unordered-list_item {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
   font-size: 1rem;
+  transition: ease-in-out 0.2s;
 }
 
-.sidebar_unordered-list_icon{
+.sidebar_unordered-list_item:hover{
+  transform: translate(10px, 0);
+  cursor: pointer;
+}
+
+.sidebar_unordered-list_icon {
   margin-right: 0.5rem;
 }
 
-
-.hero-section{
+.hero-section {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
-h1{
+h1 {
   margin: 0;
   padding-left: 1rem;
   font-size: clamp(1.4rem, 2.5vw, 2rem);
   line-height: 5rem;
   border-bottom: 2px solid rgba(149, 100, 170, 0.2);
 }
-
 
 .slider {
   position: relative;
@@ -223,7 +228,6 @@ h1{
   justify-content: space-around;
   height: 15vh;
   overflow: hidden;
-
 }
 
 .slides {
@@ -243,18 +247,18 @@ h1{
   box-sizing: border-box;
 }
 
-.slide_initial-container{
+.slide_initial-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 90%;
   height: 8vh;
   padding-right: 0.5rem;
-  background-color: #9564AA;
+  background-color: #9564aa;
   border-radius: 0.5rem;
 }
 
-.yellow-block{
+.yellow-block {
   position: relative;
   z-index: 999;
   right: 10%;
@@ -266,105 +270,107 @@ h1{
   height: 2rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  font-family: 'Ubuntu-bold';
+  font-family: "Ubuntu-bold";
   font-size: clamp(0.8rem, 2.5vw, 1.2rem);
   color: black;
-  background-color:#FFCF2D;
+  background-color: #ffcf2d;
   border-radius: 0.5rem;
 }
 
-.price-block{
+.price-block {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-family: 'Ubuntu-bold';
-  font-size: 1.5rem;
+  font-family: "Ubuntu-bold";
+  font-size: 20px;
   color: white;
 }
 
-.coin-icon{
+.slider-coin {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  color: black;
 }
 
 .pagination-dots {
   position: absolute;
-  bottom:0;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0.5rem;
   z-index: 1000;
 }
 
 .pagination-dot {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.8rem;
+  height: 0.8em;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  background-color: #FFCF2D;
+  background-color: #ffcf2d;
 }
 
 .pagination-dot.active {
-  background-color: #9564AA;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #9564aa;
 }
 
-
-fieldset{
+fieldset {
   border: none;
 }
 
-.form-button{
+.form-button {
   width: 100%;
   height: 3.4rem;
   margin-bottom: 1rem;
-  background-color: #FFCF2D;
+  background-color: #ffcf2d;
   border: none;
   border-radius: 0.5rem;
-  font-family: 'Ubuntu-bold';
+  font-family: "Ubuntu-bold";
   font-size: 1rem;
+  cursor: pointer;
 }
 
-.form_ul-item{
+.form_ul-item {
   font-size: 0.7rem;
 }
 
-.radio-input{
-  accent-color:#9564AA;
+.radio-input {
+  accent-color: #9564aa;
 }
 
-
-.form-link{
-  color: #9564AA;
+.form-link {
+  color: #9564aa;
 }
 
-.mobile-diamond-icon{
+.mobile-diamond-icon {
   position: relative;
   left: 25%;
   margin-top: 2rem;
   width: 50%;
 }
 
-
-
-.low-menu{
+.low-menu {
   padding-left: 1rem;
   padding-right: 1rem;
-  font-family: 'Ubuntu-bold';
-  color: #9564AA;
+  font-family: "Ubuntu-bold";
+  color: #9564aa;
   font-size: 0.7rem;
 }
 
-.low-menu_ul_li{
+.low-menu_ul_li {
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
 }
 
-.low-menu_icon-block{
+
+.low-menu_icon-block {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -375,41 +381,37 @@ fieldset{
   border-radius: 5rem;
 }
 
-.low-menu_icon{
+.low-menu_icon {
   width: 0.8rem;
   height: 0.8rem;
 }
 
-
-
-
-
 /* DESKTOP */
 
-.sale-container{
+.sale-container {
   display: none;
   padding: 1rem;
   margin-top: 2rem;
   width: 100%;
   height: 10vh;
-  background-color: #C15CA1;
+  background-color: #c15ca1;
   border-radius: 10px;
 }
 
-.sale-span{
-  font-family: 'Ubuntu-bold';
-  font-size: 2rem;
-  color: #FFCF2D;
-  -webkit-text-stroke: 1px  white;
+.sale-span {
+  font-family: "Ubuntu-bold";
+  font-size: clamp(20px, 2.5vw,40px);
+  color: #ffcf2d;
+  -webkit-text-stroke: 1px white;
 }
 
-.offer-span{
-  font-family: 'Ubuntu-bold';
-  font-size: 1rem;
+.offer-span {
+  font-family: "Ubuntu-bold";
+  font-size: clamp(5px, 2.5vw,15px);
   color: white;
 }
 
-.timer{
+.timer {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -417,16 +419,6 @@ fieldset{
   background-color: white;
   border-radius: 5px;
 }
-
-
-
-
-
-
-
-
-
-
 
 .form-container {
   display: none;
@@ -436,25 +428,25 @@ fieldset{
   text-align: center;
 }
 
-
 .offer-blocks {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, auto)); */
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   margin-bottom: 20px;
 }
 
 .offer-block {
-  height:  140px;
+  height: 140px;
   background-color: rgba(149, 100, 170, 0.2);
   border: 2px solid #ddd;
   border-radius: 15px;
-  border-color: #9564AA;
+  border-color: #9564aa;
   cursor: pointer;
   transition: border-color 0.3s ease;
 }
 
-.offer-content{
+.offer-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -466,7 +458,7 @@ fieldset{
   border-radius: 8px;
 }
 
-.one-time-offer{
+.one-time-offer {
   visibility: hidden;
   position: relative;
   z-index: 999;
@@ -477,26 +469,32 @@ fieldset{
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 
-  font-family: 'Ubuntu-bold';
+  font-family: "Ubuntu-bold";
   color: black;
-  background-color: #FFCF2D;
+  background-color: #ffcf2d;
   border-radius: 5px;
 }
 
-.offer-content-span{
+.offer-content-span {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
-  font-family: 'Ubuntu-bold';
+  font-family: "Ubuntu-bold";
   font-size: 1.5rem;
-  color:black;
+  color: black;
 }
 
-.CR-icon{
+.CR-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 0.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  border-radius: 5rem;
+  background-color: #FFCF2D;
 }
 
 .offer-block input[type="radio"] {
@@ -504,21 +502,32 @@ fieldset{
 }
 
 .offer-block input[type="radio"]:checked + .offer-content {
-  background-color: #9564AA;
+  background-color: #9564aa;
 }
-
 
 .offer-block input[type="radio"]:checked + .offer-content .buy-now-button {
-  background-color: #FFCF2D; 
-  color: black; 
+  background-color: #ffcf2d;
+  color: black;
 }
 .offer-block input[type="radio"]:checked + .offer-content .one-time-offer {
-  visibility: inherit;;
+  visibility: inherit;
 }
 
+.offer-block input[type="radio"]:hover + .offer-content {
+  background-color: #9564aa;
+}
+
+.offer-block input[type="radio"]:hover + .offer-content .buy-now-button {
+  background-color: #ffcf2d;
+  color: black;
+}
+.offer-block input[type="radio"]:hover + .offer-content .one-time-offer {
+  visibility: inherit;
+}
 
 .privacy-checkbox {
   text-align: left;
+  accent-color: #9564aa;
 }
 
 .privacy-checkbox label {
@@ -527,11 +536,10 @@ fieldset{
 }
 
 .buy-now-button {
-
   width: 100%;
   padding: 15px;
   background-color: white;
-  font-family: 'Ubuntu-bold';
+  font-family: "Ubuntu-bold";
   color: grey;
   border: none;
   border-radius: 8px;
@@ -546,91 +554,182 @@ fieldset{
 }
 
 @media screen and (width < 1700px) {
-  .grid1000{
+  .offer-blocks {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid1000 {
     grid-column: span 4;
   }
-  .special-offer-content{
+  .special-offer-content {
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
-  .special-one-time-offer{
+  .special-one-time-offer {
     display: none;
   }
 
-  .special-offer-content-span{
+  .special-offer-content-span {
     margin-bottom: 0;
     margin-right: 1rem;
   }
 
-  .special-buy-now-button{
+  .special-buy-now-button {
     width: 20%;
   }
-  }
-  
+}
 
-@media screen and (width < 750px) {
-  .grid1000{
+@media screen and (width < 1150px) {
+  .offer-blocks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid1000 {
     grid-column: span 2;
   }
-  }
-
-
-
-
-
-
-
-
-
-
-
+}
 
 @media screen and (width > 700px) {
-  .main-section{
+  .main-section {
     margin-top: 2rem;
     padding-left: 10%;
     padding-right: 10%;
-    
   }
- .slider{
-  display: none;
- }
- .mobile-form{
-  display: none;
- }
- .mobile-diamond-icon{
-  display: none;
- }
- .low-menu{
-  display: none;
- }
- .main-section_sidebar{
-  display: block;
- }
+  .slider {
+    display: none;
+  }
+  .mobile-form {
+    display: none;
+  }
+  .mobile-diamond-icon {
+    display: none;
+  }
+  .low-menu {
+    display: none;
+  }
+  .main-section_sidebar {
+    display: block;
+  }
 
- .form-container{
-  display: block;
- }
- .sale-container{
-  display: grid;
-  grid-template-columns:  repeat(3,1fr);
- }
- .grid-item{
-  display: flex;
-  align-items: center;
- }
+  .form-container {
+    display: block;
+  }
+  .sale-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-item {
+    display: flex;
+    align-items: center;
+  }
 
- .desktop-form{
-  display: block;
- }
-
+  .desktop-form {
+    display: block;
+  }
 }
-  
+
+/* DIAMOND-CONTAINER */
+
+.diamond-container {
+  position: relative;
+  left: 30%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 40%;
+  height: 45vh;
+  margin-top: 2rem;
+}
+
+.block-1,
+.block-2,
+.block-4,
+.block-6,
+.block-7 {
+  grid-column: span 2;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.block-1,
+.block-3,
+.block-6 {
+  align-items: flex-end;
+}
+
+.block-2,
+.block-5,
+.block-7 {
+  align-items: flex-start;
+}
+
+.diamond-block {
+  background-image: url(/img/mobile-diamond-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.diamond-container_initial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.diamond-container_icon-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(149, 100, 170, 0.2);
+  border-radius: 5rem;
+}
+
+.diamond-container_icon-block_icon {
+  width: 25px;
+  height: 25px;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+}
+
+.diamond-container_discription-block {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: "Ubuntu-bold";
+  font-size: 12px;
+  color: #9564aa;
+}
+
+@media screen and (width < 1400px) {
+  .diamond-container {
+    left: 10%;
+    width: 80%;
+  }
+}
+
+@media screen and (width < 700px) {
+  .diamond-container {
+    display: none;
+  }
+}
 
 
+.diamond-container_icon-block_icon{
+  --icon-color: #9564aa; 
+  transition: ease-in-out;
+  transition-duration: 0.2s;
+}
 
+
+.diamond-container_icon-block_icon:hover{
+  --icon-color:  #FFCF2D; 
+}
 
 
 
