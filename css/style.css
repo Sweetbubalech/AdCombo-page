@@ -359,13 +359,10 @@ fieldset {
   width: 20px;
   height: 20px;
   margin: 0;
+  margin-right: 0.5rem;
   accent-color: #9564aa;
 }
 
-.radio-input-block{
-  margin-right: 0.5rem;
-  height: 100%;
-}
 
 
 
