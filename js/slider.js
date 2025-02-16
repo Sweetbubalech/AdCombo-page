@@ -45,8 +45,8 @@ function stopSlider() {
 
 function activateButton() {
   formButton.disabled = false;
-  formButton.style.backgroundColor = '#ffcf2d'; // Желтый цвет
-  formButton.style.color = 'black'; // Черный текст
+  formButton.style.backgroundColor = '#ffcf2d'; 
+  formButton.style.color = 'black'; 
 }
 
 function nextSlide() {
